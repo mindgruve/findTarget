@@ -14,7 +14,7 @@ define(['jquery'], function ($) {
      *     "<<CSS Selector>>" Select the elements that match the CSS Selector with jQuery
      *
      * @author Abishai Gray <agray@abishaigray.com>
-     * @version: 1.1.0
+     * @version: 1.1.1
      *
      * @param $elem The current element
      * @param override An alternative "data-" attribute to pull the target selector from. Pass true if you wish to override the 'target' in the next param

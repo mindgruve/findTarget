@@ -1,21 +1,36 @@
 #findTarget
 
-## Version: 1.1.0
+## Version: 1.1.1
 
 
-findTarget is used find the target specified on an elements "data-target" or an alternative 'data-' attribute.
+findTarget is used find the target specified on an elements `data-target` or an alternative `data-` attribute.
 
-data-target may have any complex set of custom selectors including the full suite available to jQuery
+`data-target` may have any complex set of custom selectors including the full suite available to jQuery
 You can chain a set of selectors using a pipe (|) delimiter this allows you to perform complex traversals
 
-Selectors
-    "prev" select the element before the element provided
-    "next" select the element after the element provided
-    "parent" select the direct parent element of the element provided
-    "parents <<CSS Selector>>" select all parents of the element provided. Optionally filtered by CSS Selector
-    "child <<CSS Selector>>" select child elements of the element provided. You must provide a search CSS Selector
-    "this" Select the element provided
-    "<<CSS Selector>>" Select the elements that match the CSS Selector with jQuery
+Selectors:
 
+- "prev" select the element before the element provided
+- "next" select the element after the element provided
+- "parent" select the direct parent element of the element provided
+- "parents <<CSS Selector>>" select all parents of the element provided. Optionally filtered by CSS Selector
+- "child <<CSS Selector>>" select child elements of the element provided. You must provide a search CSS Selector
+- "this" Select the element provided
+- "<<CSS Selector>>" Select the elements that match the CSS Selector with jQuery
+
+
+Example Usage:
+
+```html
+<button id="ring" data-target="next" type="button">Ring Ring!</button>
+<div class="telephone"></div>
+```
+
+```js
+$('#ring').on('click', function () {
+	var theTarget = findTarget($(this));
+	theTarget.text('Banana Phone!');
+});
+```
 
 Abishai Gray <agray@abishaigray.com>
