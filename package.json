@@ -1,0 +1,19 @@
+{
+  "name": "findtarget",
+  "version": "1.1.1",
+  "description": "findTarget is used find the target specified on an elements \"data-target\" or an alternative 'data-' attribute.",
+  "main": "findTarget.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindgruve/findTarget.git"
+  },
+  "author": "Abishai Gray <linkabi9@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindgruve/findTarget/issues"
+  },
+  "homepage": "https://github.com/mindgruve/findTarget#readme"
+}
